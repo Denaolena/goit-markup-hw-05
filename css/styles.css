@@ -297,6 +297,8 @@ img {
   min-width: 100%;
   height: 1024px;
   background-color: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-hidden {
@@ -392,23 +394,32 @@ img {
 }
 .work-box {
   position: relative;
-  /* display: flex;
+  display: flex;
   justify-content: center;
-  align-items: center; */
+}
+.work-box::before {
+  display: inline-block;
+  bottom: 0;
+  right: 0;
+  content: '';
+  position: absolute;
+  width: 370px;
+  height: 70px;
+
+  background-color: rgba(47, 48, 58, 0.8);
 }
 
 .work-text {
+  display: inline-block;
+  margin: 27px auto;
   position: absolute;
   bottom: 0;
-  right: 0;
-
+  right: 30%;
+  text-transform: uppercase;
   font-size: 14px;
   line-height: 1.14;
-  /* align: Center; */
+
   color: #ffffff;
-  outline: 3px solid orange;
-  /* width: 370px;
-  position: relative; */
 }
 
 /* team-list */
