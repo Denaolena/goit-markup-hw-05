@@ -246,9 +246,6 @@ img {
   background-position: center;
   background-size: cover;
 }
-.hero .container {
-  /* background-color: #2f303a; */
-}
 
 .hero-title {
   display: block;
@@ -349,9 +346,6 @@ img {
 }
 
 /* feature-list */
-
-.feature-list .item {
-}
 
 .feature-list .item:not(:last-child) {
   margin-right: 30px;
@@ -510,11 +504,6 @@ img {
 .section-client {
   padding-top: 94px;
   padding-bottom: 94px;
-}
-.section-client .container {
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
 }
 
 .section-client .section-title {
