@@ -317,24 +317,19 @@ img {
 }
 .modal-button {
   display: flex;
+  align-items: center;
+  justify-content: center;
   position: absolute;
   top: 8px;
   right: 8px;
-  /* width: 30px;
-  height: 30px; */
+  width: 30px;
+  height: 30px;
   cursor: pointer;
-  border: none;
+  border: 1px solid #0000001a;
+  border-radius: 50%;
   background-color: transparent;
 }
-
-/* .icon-close {
-  display: flex-end;
-  position: absolute;
-  top: 0;
-  right: 0;
-  padding-top: 14px;
-  padding-right: 14px;
-  /* fill: #ffffff; */
+/* fill: #ffffff;
 /* stroke: rgba(0, 0, 0, 0.1); */
 /* fill #000000; */
 /* cursor: pointer; */
@@ -673,8 +668,7 @@ img {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   cursor: pointer;
   fill: #fff;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-link-icon:hover,
 .footer-link-icon:hover {
@@ -701,7 +695,8 @@ img {
   min-width: 73px;
   /* padding: 6px 22px; */
   border-radius: 4px;
-
+  /* transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    transform 250ms var(--timing-function); */
   background-color: #f5f4fa;
 }
 
@@ -714,6 +709,8 @@ img {
   text-align: center;
   background-color: #f5f4fa;
   color: var(--primary-text-color);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    transform 250ms var(--timing-function);
 }
 .potfolio-btns .highlighter:hover,
 .potfolio-btns .highlighter:focus {
@@ -754,6 +751,7 @@ img {
   width: 370px;
   margin-right: 30px;
   margin-bottom: 30px;
+  /* transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
 .projects .item:hover,
 .projects .item:focus {
@@ -797,12 +795,15 @@ img {
   height: 100%;
   transform: translateY(100%);
   background-color: rgba(33, 150, 243, 0.9);
-  transition: transform 250ms var(--timing-function);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    transform 250ms var(--timing-function);
 }
-.projects-box:hover .projects-overlay {
+/* .projects-box:hover .projects-overlay {
+  transform: translateY(0);
+} */
+.projects .item:hover .projects-overlay {
   transform: translateY(0);
 }
-
 /* Альтернатива */
 
 /* calc ( 100% -кол-во маржинов в строке *значение маржина)/ кол-во єлементов в строке
